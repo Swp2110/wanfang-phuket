@@ -7,19 +7,19 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': { 'min': '320px', 'max': '675px' },
+        sm: { min: '320px', max: '650px' },
         // => @media (min-width: 640px and max-width: 767px) { ... }
 
-        'md': { 'min': '768px', 'max': '1023px' },
+        md: { min: '651px', max: '1023px' },
         // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-        'lg': { 'min': '1024px', 'max': '1279px' },
+        lg: { min: '1024px', max: '1279px' },
         // => @media (min-width: 1024px and max-width: 1279px) { ... }
 
-        'xl': { 'min': '1280px', 'max': '1535px' },
+        xl: { min: '1280px', max: '1535px' },
         // => @media (min-width: 1280px and max-width: 1535px) { ... }
 
-        '2xl': { 'min': '1536px' },
+        '2xl': { min: '1536px' },
         // => @media (min-width: 1536px) { ... }
       },
       fontSize: {
@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     require('daisyui'),
     require('@rvxlab/tailwind-plugin-ios-full-height'),
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
+
     require('@tailwindcss/forms')({
       strategy: 'class',
     }),
@@ -42,10 +42,10 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#D52E2E",
-          secondary: "#f6d860",
-          accent: "#37cdbe",
-          neutral: "#3d4451",
+          primary: '#D52E2E',
+          secondary: '#f6d860',
+          accent: '#37cdbe',
+          neutral: '#3d4451',
         },
       },
     ],
