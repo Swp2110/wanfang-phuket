@@ -6,6 +6,7 @@ import drinkMenuImage from '../assets/drinkManu.jpeg'
 import Bread from '../assets/bread.jpeg'
 import Bubbletea from '../assets/bubbletea.png'
 import Noodle from '../assets/noodle.jpeg'
+import Dumplings from '../assets/dumplings.jpeg'
 
 const Wanfang = () => {
   return (
@@ -49,6 +50,22 @@ const Wanfang = () => {
             <figure>
               <img
                 src={Bubbletea}
+                style={{
+                  backgroundImage: `url(${wfImage})`,
+                  width: '270',
+                  height: '270',
+                }}
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Bubble Tea</h2>
+              <p>ราคา: 50 บาท</p>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl m-5">
+            <figure>
+              <img
+                src={Dumplings}
                 style={{
                   backgroundImage: `url(${wfImage})`,
                   width: '270',
